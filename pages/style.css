@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'inria_sans_Bold';
+    src: url(/TrackProfits/Inria_Sans/InriaSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'inria_sans_regular';
+    src: url(/TrackProfits/Inria_Sans/InriaSans-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-color: #E6E6E6;
+}
+
+header {
+    background-color: #245ECD;
+    color: #FFFFFF;
+    padding: 15px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header h1, header ul {
+    font-family: 'inria_sans_Bold';
+}
+
+header ul {
+    width: 12%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+header ul a {
+    color: #FFFFFF;
+}
+
+body > div form {
+    width: 600px;
+    margin: 40px auto;
+}
+
+body > div form > div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 25px;
+    font-family: 'inria_sans_Bold';
+    margin-bottom: 30px;
+}
+
+body > div form > div:first-of-type img {
+    margin-left: 10px;
+}
+
+body > div form > div:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body > div form > div:last-of-type > div:first-of-type,
+body > div form > div:last-of-type > div:nth-child(2) {
+    width: calc(95% / 2);
+}
+
+body > div form > div:last-of-type > div:first-of-type input,
+body > div form > div:last-of-type > div:nth-child(2) input {
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 1rem;
+    background: #E6E6E6;
+    border: 2px solid #245ECD;
+    border-radius: 3px;
+    font-family: 'inria_sans_Bold';
+    margin-bottom: 10px;
+}
+
+body > div form > div:last-of-type > div:last-of-type {
+    width: 65%;
+    margin: auto;
+}
+
+body > div form > div:last-of-type > div:last-of-type button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-family: 'inria_sans_Bold';
+    color: white;
+    background: #245ECD;
+    border: none;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+body > div form > div:last-of-type > div:last-of-type button img {
+    width: 17px;
+    margin-left: 5px;
+}
+
+table {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1.1rem;
+    border-collapse: collapse;
+}
+
+table, thead, tbody, tr, th, td {
+    padding: 7px;
+    border-bottom: 2px solid #8A8A8A;
+}
+
+th {
+    font-family: 'inria_sans_Bold';
+}
+
+td {
+    font-family: 'inria_sans_regular';
+}
+
+tbody tr td:last-of-type {
+    display: flex;
+    justify-content: center;
+    border-bottom: none;
+}
+
+tbody tr td:last-of-type a {
+    display: flex;
+}
+
+tbody tr td:last-of-type a:first-of-type {
+    color: #1FCD26;
+}
+
+tbody tr td:last-of-type a:last-of-type {
+    color: #D20000;
+}
