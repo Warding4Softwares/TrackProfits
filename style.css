@@ -145,6 +145,7 @@ tbody tr td:last-of-type a {
 
 tbody tr td:last-of-type a:first-of-type {
     color: #1FCD26;
+    cursor: pointer;
 }
 
 tbody tr td:last-of-type a:last-of-type {
