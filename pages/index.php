@@ -20,8 +20,8 @@
     <header>
         <h1>TP | Track Profits</h1>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profits</a></li>
+            <li><a href=<?php print $_ENV['DOMAIN'] ?>>Home</a></li>
+            <li><a href=<?php print $_ENV['DOMAIN'] . "/pages/GetPreviousProfits.php" ?>>Profits</a></li>
         </ul>
     </header>
     <div>

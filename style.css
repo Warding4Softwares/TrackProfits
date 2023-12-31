@@ -46,12 +46,12 @@ header ul a {
     color: #FFFFFF;
 }
 
-body > div form {
+body > div #TargetForm {
     width: 600px;
     margin: 40px auto;
 }
 
-body > div form > div:first-of-type {
+body > div #TargetForm > div:first-of-type {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -60,23 +60,24 @@ body > div form > div:first-of-type {
     margin-bottom: 30px;
 }
 
-body > div form > div:first-of-type img {
+body > div #TargetForm > div:first-of-type img {
     margin-left: 10px;
 }
 
-body > div form > div:last-of-type {
+body > div #TargetForm > div:last-of-type {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-body > div form > div:last-of-type > div:first-of-type,
-body > div form > div:last-of-type > div:nth-child(2) {
+body > div #TargetForm > div:last-of-type > div:first-of-type,
+body > div #TargetForm > div:last-of-type > div:nth-child(2) {
     width: calc(95% / 2);
 }
 
-body > div form > div:last-of-type > div:first-of-type input,
-body > div form > div:last-of-type > div:nth-child(2) input {
+body > div #TargetForm > div:last-of-type > div:first-of-type input,
+body > div #TargetForm > div:last-of-type > div:nth-child(2) input,
+#GetProfitsForm > div input {
     width: 100%;
     padding: 7px 10px;
     font-size: 1rem;
@@ -87,12 +88,13 @@ body > div form > div:last-of-type > div:nth-child(2) input {
     margin-bottom: 10px;
 }
 
-body > div form > div:last-of-type > div:last-of-type {
+body > div #TargetForm > div:last-of-type > div:last-of-type {
     width: 65%;
     margin: auto;
 }
 
-body > div form > div:last-of-type > div:last-of-type button {
+body > div #TargetForm > div:last-of-type > div:last-of-type button,
+#GetProfitsForm > div > div:last-of-type button {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -107,7 +109,7 @@ body > div form > div:last-of-type > div:last-of-type button {
     cursor: pointer;
 }
 
-body > div form > div:last-of-type > div:last-of-type button img {
+body > div #TargetForm > div:last-of-type > div:last-of-type button img {
     width: 17px;
     margin-left: 5px;
 }
@@ -150,4 +152,31 @@ tbody tr td:last-of-type a:first-of-type {
 
 tbody tr td:last-of-type a:last-of-type {
     color: #D20000;
+}
+
+#GetProfitsForm {
+    width: 700px;
+    margin: 40px auto;
+}
+
+#GetProfitsForm h1 {
+    font-size: 45px;
+    font-family: 'inria_sans_Bold';
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#GetProfitsForm > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#GetProfitsForm > div input {
+    width: 200px;
+}
+
+#GetProfitsForm > div > div:last-of-type {
+    width: 70%;
+    margin-top: 10px;
 }
