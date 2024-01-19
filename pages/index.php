@@ -66,7 +66,7 @@
                                 <td> <?php print $val['Item'] ?> </td>
                                 <td> <?php print $val['Price'] ?> $ </td>
                                 <td>
-                                    <a id="edite" style="margin-right: 7px;">
+                                    <a class="edite" style="margin-right: 7px;">
                                         <p>Edite</p>
                                         <img src="/TrackProfits/icons/pen-to-square-solid 1.svg" style="margin-left: 5px;" />
                                     </a>
@@ -87,7 +87,7 @@
     </div>
 
     <script>
-        const EditeBtn = document.getElementById("edite");
+        const EditeBtn = Array.from(document.getElementsByClassName("edite"));
         const add_edite = document.getElementById("add_edite");
         const TargetForm = document.getElementById("TargetForm");
 
@@ -117,7 +117,9 @@
             `;
         };
 
-        EditeBtn.addEventListener("click", OnClick_On_EditeBtn);
+        EditeBtn.forEach(ele => {
+            ele.addEventListener("click", OnClick_On_EditeBtn)
+        });
     </script>
 
 </body>
