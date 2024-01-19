@@ -9,8 +9,11 @@
 
     <style>
         #content {
+            padding: 0 20px;
+            width: fit-content;
             max-height: 300px;
             overflow-x: hidden;
+            margin: 0 auto;
         }
     </style>
 
@@ -82,16 +85,18 @@
                         <th>Date</th>
                     </tr>
                 </thead>
-                <tbody>${data.map(ele => {
-                    return `
-                        <tr>
-                            <td>${ele.id}</td>
-                            <td>${ele.Item}</td>
-                            <td>${ele.Price}$</td>
-                            <td>${ele.Date}</td>
-                        </tr>
-                    `;
-                })}</tbody>
+                <tbody>
+                    ${data.map(ele => {
+                        return `
+                            <tr>
+                                <td>${ele.id}</td>
+                                <td>${ele.Item}</td>
+                                <td>${ele.Price}$</td>
+                                <td>${ele.Date}</td>
+                            </tr>
+                        `;
+                    }).join("")}
+                </tbody>
             </table>
             `;
         };

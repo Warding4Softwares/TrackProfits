@@ -8,6 +8,19 @@
     src: url(/TrackProfits/Inria_Sans/InriaSans-Regular.ttf);
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+::-webkit-scrollbar-track {
+  background: rgb(199, 199, 199);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -116,7 +129,7 @@ body > div #TargetForm > div:last-of-type > div:last-of-type button img {
 
 table {
     margin: 0 auto;
-    width: 50%;
+    width: 700px;
     text-align: center;
     font-size: 1.1rem;
     border-collapse: collapse;
